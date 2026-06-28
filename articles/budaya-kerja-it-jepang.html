@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IT Work Culture in Japan: HouRenSou, Choukai &amp; Unwritten Rules (2026)</title>
+<meta name="description" content="Complete guide to IT work culture in Japan: the HouRenSou system, choukai, nemawashi, code review, overtime, and tips for thriving at a Japanese company as a foreign engineer.">
+<meta name="keywords" content="IT work culture Japan, HouRenSou, choukai, nemawashi, working in Japan, IT engineer Japan, work culture Japan">
+<meta name="author" content="Vetra Aprilia">
+<link rel="canonical" href="https://japandevguide.com/articles/budaya-kerja-it-jepang.html">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="IT Work Culture in Japan: HouRenSou, Choukai &amp; Unwritten Rules (2026)">
+<meta property="og:description" content="Complete guide to IT work culture in Japan: the HouRenSou system, choukai, nemawashi, code review, overtime, and tips for thriving at a Japanese company as a foreign engineer.">
+<meta property="og:url" content="https://japandevguide.com/articles/budaya-kerja-it-jepang.html">
+<meta property="og:site_name" content="Japan Dev Guide">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Vetra Aprilia">
+<meta property="article:published_time" content="2026-06-28">
+
+<!-- Twitter Card -->
+<meta property="og:image" content="https://japandevguide.com/images/ebook_images/Japanese_office_morning_meeting_scene_202606220633.jpeg">
+<meta name="twitter:image" content="https://japandevguide.com/images/ebook_images/Japanese_office_morning_meeting_scene_202606220633.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IT Work Culture in Japan: HouRenSou, Choukai &amp; Unwritten Rules (2026)">
+<meta name="twitter:description" content="Complete guide to IT work culture in Japan: the HouRenSou system, choukai, nemawashi, code review, overtime, and tips for thriving at a Japanese company.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<!-- JSON-LD Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "IT Work Culture in Japan: HouRenSou, Choukai & Unwritten Rules (2026)",
+  "description": "Complete guide to IT work culture in Japan: the HouRenSou system, choukai, nemawashi, code review, overtime, and tips for thriving at a Japanese company as a foreign engineer.",
+  "author": {
+    "@type": "Person",
+    "name": "Vetra Aprilia"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Japan Dev Guide",
+    "url": "https://japandevguide.com"
+  },
+  "datePublished": "2026-06-28",
+  "dateModified": "2026-06-28",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://japandevguide.com/articles/budaya-kerja-it-jepang.html"
+  },
+  "inLanguage": "en",
+  "wordCount": 2800,
+  "articleSection": "Work Culture"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://japandevguide.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://japandevguide.com/articles.html"},
+    {"@type": "ListItem", "position": 3, "name": "Japanese IT Work Culture"}
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --accent: #C85A00;
+    --accent2: #E8745B;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F9F7F4; color: #1A2332; font-family: 'Lora', Georgia, serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  ::selection { background: var(--accent); color: #F9F7F4; }
+
+  /* Nav */
+  .nav-link { transition: color 0.2s; }
+  .nav-link:hover { color: #1A2332 !important; }
+
+  /* Article */
+  .article-body h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 3.6vw, 32px);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    margin: 56px 0 20px;
+    color: #1A2332;
+  }
+  .article-body h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: clamp(19px, 2.8vw, 24px);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 42px 0 16px;
+    color: #1A2332;
+  }
+  .article-body p {
+    font-size: 17.5px;
+    line-height: 1.72;
+    color: #2d3748;
+    margin: 0 0 20px;
+  }
+  .article-body ul, .article-body ol {
+    font-size: 17.5px;
+    line-height: 1.72;
+    color: #2d3748;
+    margin: 0 0 20px;
+    padding-left: 24px;
+  }
+  .article-body li {
+    margin-bottom: 8px;
+  }
+  .article-body strong {
+    color: #1A2332;
+    font-weight: 600;
+  }
+  .article-body blockquote {
+    margin: 28px 0;
+    padding: 20px 24px;
+    border-left: 4px solid var(--accent);
+    background: rgba(200, 90, 0, 0.04);
+    font-style: italic;
+    color: #3a4456;
+  }
+  .article-body blockquote p {
+    margin: 0;
+    color: #3a4456;
+  }
+
+  /* Info box */
+  .info-box {
+    background: #1A2332;
+    color: #F9F7F4;
+    padding: clamp(22px, 3vw, 32px);
+    margin: 32px 0;
+    font-family: 'Outfit', sans-serif;
+  }
+  .info-box p, .info-box li {
+    color: rgba(249, 247, 244, 0.85);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .info-box strong {
+    color: #F9F7F4;
+  }
+  .info-box .box-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  /* Japanese term highlight */
+  .jp-term {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--accent);
+    font-style: normal;
+  }
+
+  /* Schedule table */
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0 28px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+  }
+  .schedule-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(26, 35, 50, 0.1);
+    vertical-align: top;
+  }
+  .schedule-table td:first-child {
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+    width: 130px;
+  }
+  .schedule-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Related articles */
+  .related-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    padding: clamp(22px, 3vw, 30px);
+    border: 1px solid rgba(26, 35, 50, 0.08);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .related-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(200, 90, 0, 0.08);
+  }
+
+  /* Footer links */
+  .footer-link:hover { color: #1A2332 !important; }
+
+  /* Breadcrumb */
+  .breadcrumb a {
+    color: #6b7484;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links-desktop { display: none !important; }
+    .related-grid { grid-template-columns: 1fr !important; }
+    .schedule-table td:first-child { width: auto; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(10px); -webkit-backdrop-filter:saturate(140%) blur(10px); background:rgba(249,247,244,0.82); border-bottom:1px solid rgba(26,35,50,0.08);">
+    <div style="max-width:1180px; margin:0 auto; padding:0 clamp(20px,5vw,48px); height:68px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="../index.html" style="display:flex; align-items:center; gap:11px; text-decoration:none; color:inherit;">
+        <span style="display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; background:#1A2332; position:relative;">
+          <span style="position:absolute; top:6px; left:5px; right:5px; height:3px; background:var(--accent);"></span>
+          <span style="position:absolute; top:11px; left:8px; width:3px; bottom:6px; background:#F9F7F4;"></span>
+          <span style="position:absolute; top:11px; right:8px; width:3px; bottom:6px; background:#F9F7F4;"></span>
+        </span>
+        <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:17px; letter-spacing:-0.01em;">Japan Dev Guide</span>
+      </a>
+      <div class="nav-links-desktop" style="display:flex; align-items:center; gap:clamp(14px,3vw,34px); font-family:'Outfit',sans-serif; font-size:14.5px; font-weight:500;">
+        <a href="../index.html#pillars" class="nav-link" style="color:#3a4456; text-decoration:none;">Topics</a>
+        <a href="../index.html#salaries" class="nav-link" style="color:#3a4456; text-decoration:none;">Salaries</a>
+        <a href="../about.html" class="nav-link" style="color:#3a4456; text-decoration:none;">About</a>
+        <a href="../index.html#subscribe" style="background:#1A2332; color:#F9F7F4; text-decoration:none; padding:9px 18px; border-radius:2px; font-weight:600;">Read the Guide</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div style="max-width:720px; margin:0 auto; padding:24px clamp(20px,5vw,48px) 0;">
+    <div class="breadcrumb" style="font-family:'Outfit',sans-serif; font-size:13.5px; color:#9aa1ad; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+      <a href="../index.html">Home</a>
+      <span>&#8250;</span>
+      <a href="../index.html#pillars">Articles</a>
+      <span>&#8250;</span>
+      <span style="color:#3a4456;">IT Work Culture in Japan</span>
+    </div>
+  </div>
+
+  <!-- ===== HERO IMAGE ===== -->
+  <figure style="max-width:720px; margin:0 auto; padding:24px clamp(20px,5vw,48px) 0;">
+    <img src="../images/ebook_images/Japanese_office_morning_meeting_scene_202606220633.jpeg" alt="Japanese office morning meeting (choukai) scene" style="width:100%; max-height:400px; object-fit:cover; border-radius:4px; margin-bottom:32px;">
+  </figure>
+
+  <!-- ===== ARTICLE ===== -->
+  <article style="max-width:720px; margin:0 auto; padding:clamp(32px,5vw,56px) clamp(20px,5vw,48px) clamp(48px,7vw,80px);">
+
+    <!-- Article Header -->
+    <header style="margin-bottom:40px;">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px;">
+        <span style="width:26px; height:2px; background:var(--accent);"></span>
+        <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Work Culture</span>
+      </div>
+      <h1 style="font-family:'Outfit',sans-serif; font-weight:800; font-size:clamp(30px,5vw,46px); line-height:1.1; letter-spacing:-0.025em; margin:0 0 20px; color:#1A2332;">IT Work Culture in Japan: What You Need to Know Before Joining</h1>
+      <p style="font-size:19px; line-height:1.6; color:#5a6373; margin:0 0 24px;">HouRenSou, choukai, nemawashi, rigorous code reviews, and other unwritten rules &#8212; a comprehensive guide from firsthand experience in Japan's IT industry.</p>
+
+      <!-- Meta -->
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px; padding-top:20px; border-top:1px solid rgba(26,35,50,0.1); font-family:'Outfit',sans-serif; font-size:14px; color:#6b7484;">
+        <span style="display:flex; align-items:center; gap:6px;">
+          <span style="width:28px; height:28px; background:#1A2332; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:#F9F7F4; font-weight:700; font-size:12px;">VA</span>
+          <strong style="color:#1A2332; font-weight:600;">Vetra Aprilia</strong>
+        </span>
+        <span>June 28, 2026</span>
+        <span style="display:flex; align-items:center; gap:4px;">&#9201; 15 min read</span>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <div class="article-body">
+
+      <p>If you imagine working in IT in Japan as being like a Silicon Valley startup &#8212; free, flat, and entirely informal &#8212; you are in for a surprise. IT work culture in Japan has a very unique DNA: a blend of Japanese-style discipline, well-structured communication frameworks, and daily rituals that can feel foreign to overseas developers.</p>
+
+      <p>This article is written based on <strong>firsthand experience working at a Japanese IT company</strong>, not from theory or online research. You will learn about choukai, HouRenSou, nemawashi, and dozens of unwritten rules that determine whether you will succeed or become frustrated in a Japanese work environment.</p>
+
+      <!-- ===== CHOUKAI ===== -->
+      <h2 id="choukai">Choukai (<span class="jp-term">&#26397;&#20250;</span>) &#8212; The Mandatory Morning Meeting</h2>
+
+      <p>Every morning at 9:00, the workday begins with a <strong>choukai</strong> via video call. It typically lasts 15-30 minutes, and this is not a formality &#8212; it is the foundation of daily communication at nearly every Japanese IT company.</p>
+
+      <p>Here is the typical rhythm of a choukai:</p>
+
+      <table class="schedule-table">
+        <tr>
+          <td>08:45</td>
+          <td><strong>Preparation:</strong> open your laptop, check Teams/Slack, review tasks in Backlog, fill in the daily health check</td>
+        </tr>
+        <tr>
+          <td>09:00</td>
+          <td><strong>Greeting &#8220;&#12362;&#12399;&#12424;&#12358;&#12372;&#12374;&#12356;&#12414;&#12377;&#8221;</strong>, then each member gives their houkoku: what they worked on yesterday, current progress, and today's plan</td>
+        </tr>
+        <tr>
+          <td>09:15</td>
+          <td><strong>Info sharing</strong> from the manager: project updates, announcements, priority changes</td>
+        </tr>
+        <tr>
+          <td>09:30</td>
+          <td><strong>Start work</strong> &#8212; deep work begins</td>
+        </tr>
+      </table>
+
+      <p>When delivering your houkoku during choukai, use <strong>formal Japanese (keigo)</strong>. The expected pattern is simple but must be consistent:</p>
+
+      <blockquote>
+        <p>What you worked on yesterday &#8594; Current status &#8594; Today's plan + time estimate</p>
+      </blockquote>
+
+      <p>When working from the office (WFO), many companies add a <span class="jp-term">&#12473;&#12500;&#12540;&#12481;</span> (short speech) session of about 5 minutes before or after the choukai. The topics rotate each period &#8212; it could be about hobbies, a book you are reading, or a personal experience. The purpose is to build team rapport, not to test your public speaking skills.</p>
+
+      <!-- ===== HOURENSOU ===== -->
+      <h2 id="hourensou">HouRenSou (<span class="jp-term">&#22577;&#36899;&#30456;</span>) &#8212; The Three Pillars of Communication</h2>
+
+      <p>If there is one Japanese work culture concept you <strong>must</strong> master, it is <strong>HouRenSou</strong>. This is not just a management theory &#8212; it is a fundamental expectation that will determine how your colleagues and superiors evaluate your professionalism.</p>
+
+      <div class="info-box">
+        <span class="box-label">The Three Pillars of HouRenSou</span>
+        <ul style="margin:0; padding-left:20px;">
+          <li><strong>&#22577;&#21578; (Houkoku) = Report:</strong> Report your progress to your manager without being asked. Don't wait to be questioned.</li>
+          <li><strong>&#36899;&#32097; (Renraku) = Contact:</strong> Share relevant information with the people who need to know, in a timely manner.</li>
+          <li><strong>&#30456;&#35527; (Soudan) = Consult:</strong> Ask for opinions or advice before making important decisions.</li>
+        </ul>
+      </div>
+
+      <h3>Practical Examples of HouRenSou for Developers</h3>
+
+      <p><strong>Houkoku (Report):</strong></p>
+      <blockquote>
+        <p>&#8220;Task A is 70% complete. Estimated to be finished by tomorrow afternoon. No blockers.&#8221;</p>
+      </blockquote>
+
+      <p><strong>Renraku (Contact):</strong></p>
+      <blockquote>
+        <p>&#8220;FYI, library X has a new security patch. Already updated on staging.&#8221;</p>
+      </blockquote>
+
+      <p><strong>Soudan (Consult):</strong></p>
+      <blockquote>
+        <p>&#8220;For feature Y, there are 2 approaches: A (fast but less flexible) and B (robust but takes more time). In your opinion, which one is more appropriate?&#8221;</p>
+      </blockquote>
+
+      <p>The core principle: in Japan, <strong>it is better to over-communicate than to under-communicate</strong>. If you are unsure whether you need to report something, just report it. Silence is seen as a sign of a problem, not a sign of independence.</p>
+
+      <figure style="margin:24px 0 32px;">
+        <img src="../images/ebook_images/Cinematic_over-the-shoulder_shot_of_a_202606250838.jpeg" alt="Engineer working at desk in Japanese IT company" style="width:100%; border-radius:4px; margin:24px 0 32px;" loading="lazy">
+      </figure>
+
+      <!-- ===== NEMAWASHI ===== -->
+      <h2 id="nemawashi">Nemawashi (<span class="jp-term">&#26681;&#22238;&#12375;</span>) &#8212; Consensus Before the Meeting</h2>
+
+      <p>Literally, nemawashi means &#8220;going around the roots&#8221; &#8212; an agricultural term describing the process of preparing a plant's roots before transplanting. In a Japanese business context, it means: <strong>getting informal agreement from all stakeholders before a formal decision is made</strong>.</p>
+
+      <p>This is important: if you skip nemawashi and present a proposal directly at a formal meeting, it will most likely be rejected. Not because the idea is bad, but because <strong>the process is considered &#8220;wrong&#8221;</strong>.</p>
+
+      <p>The approach is simple: before a major meeting, informally reach out to the people who will attend. Explain your idea, listen to their concerns, and adjust your proposal accordingly. By the time the formal meeting starts, everyone is already aware and in agreement &#8212; the meeting merely serves as a formal ratification.</p>
+
+      <!-- ===== MEETING CULTURE ===== -->
+      <h2 id="meeting-culture">Highly Structured Meeting Culture</h2>
+
+      <p>Meetings at Japanese IT companies are not places for free-form brainstorming. There are strict rules and expectations:</p>
+
+      <ul>
+        <li><strong>Agendas are sent in advance</strong> &#8212; attendees are expected to have read them and prepared their talking points</li>
+        <li>There are <span class="jp-term">&#35696;&#20107;&#37682;</span> (gijiroku = meeting minutes) that are filled in <strong>in real time</strong> during the meeting</li>
+        <li><strong>Speaking order:</strong> usually from junior to senior, though this varies by company</li>
+        <li>Meetings <strong>start and end on time</strong> &#8212; being even 1 minute late is considered rude</li>
+        <li><strong>Unscheduled calls from your lead</strong> for progress updates are normal, not interruptions &#8212; this is part of HouRenSou</li>
+      </ul>
+
+      <!-- ===== CODE REVIEW ===== -->
+      <h2 id="code-review">Rigorous Code Review Culture</h2>
+
+      <p>For developers accustomed to the &#8220;move fast and break things&#8221; mindset, code reviews at Japanese companies can feel very different. At many companies, there are established rules known as <span class="jp-term">&#12524;&#12499;&#12517;&#12540;&#36939;&#29992;&#12523;&#12540;&#12523;</span> (review operational rules).</p>
+
+      <div class="info-box">
+        <span class="box-label">Typical Code Review Flow</span>
+        <ol style="margin:0; padding-left:20px;">
+          <li>Code implementation is complete</li>
+          <li>Fill in the <strong>&#12524;&#12499;&#12517;&#12540;&#12481;&#12455;&#12483;&#12463;&#21069;&#12471;&#12540;&#12488;</strong> (pre-review checklist) &#8212; usually an Excel file</li>
+          <li>Send a notification via Teams/Slack</li>
+          <li>Submit the review request</li>
+          <li>Reviewer checks the checklist first</li>
+          <li>Code review is conducted</li>
+          <li>Review findings are documented</li>
+          <li>Revisions are made if issues are found</li>
+          <li>Repeat until clean &#8212; only then merge</li>
+        </ol>
+      </div>
+
+      <p>The principle: <strong>quality and documentation are prioritized over speed</strong>. Don't be surprised if a PR that would take 1 day elsewhere takes 3-5 days to merge here. But the result: a significantly lower bug rate in production.</p>
+
+      <!-- ===== RITME KERJA ===== -->
+      <h2 id="ritme-kerja">Typical Daily Work Rhythm</h2>
+
+      <p>Here is what a typical workday looks like for an IT engineer in Japan:</p>
+
+      <table class="schedule-table">
+        <tr>
+          <td>09:00 &#8211; 09:30</td>
+          <td>Choukai + health check</td>
+        </tr>
+        <tr>
+          <td>09:30 &#8211; 12:00</td>
+          <td><strong>Deep work:</strong> coding, bug fixing, feature development</td>
+        </tr>
+        <tr>
+          <td>12:00 &#8211; 13:00</td>
+          <td><span class="jp-term">&#26172;&#20241;&#12415;</span> (lunch break) &#8212; strictly respected, do not disturb</td>
+        </tr>
+        <tr>
+          <td>13:00 &#8211; 15:00</td>
+          <td><strong>Meeting slot:</strong> code review, sprint planning, 1-on-1</td>
+        </tr>
+        <tr>
+          <td>15:00 &#8211; 17:30</td>
+          <td>Continue coding, review PRs, pair programming</td>
+        </tr>
+        <tr>
+          <td>17:30 &#8211; 18:00</td>
+          <td><strong>Wrap up:</strong> push code, update Backlog, fill in &#21220;&#21209;&#31649;&#29702;</td>
+        </tr>
+      </table>
+
+      <p>Note the lunch break: in Japan, this is <strong>sacred</strong>. Sending messages or scheduling meetings during lunch is considered rude unless it is a genuine emergency.</p>
+
+      <!-- ===== KINMU KANRI ===== -->
+      <h2 id="kinmu-kanri">&#21220;&#21209;&#31649;&#29702; (Kinmu Kanri) &#8212; Daily Work Logs</h2>
+
+      <p>At Japanese IT companies, kinmu kanri is not just attendance tracking. It is a <strong>detailed log</strong> that includes: which project you worked on, which client, the type of work (development, testing, meeting), and how many hours for each.</p>
+
+      <p>Why so detailed? Because kinmu kanri data is used for <strong>client billing</strong> (the man-month system). One person per month (<span class="jp-term">1&#20154;&#26376;</span>) can be worth &#165;600,000 &#8211; &#165;900,000 depending on level and skill set. So your time tracking directly impacts the company's revenue.</p>
+
+      <!-- ===== REMOTE WORK ===== -->
+      <h2 id="remote-work">Remote Work in Japan</h2>
+
+      <p>After the pandemic, remote work policies in Japan vary significantly by company type:</p>
+
+      <div class="info-box">
+        <span class="box-label">Remote Work Overview by Company Type</span>
+        <ul style="margin:0; padding-left:20px;">
+          <li><strong>Startup / Tech Company:</strong> Many offer full remote or flexible hybrid arrangements</li>
+          <li><strong>Mid-size IT:</strong> Hybrid with 2-3 days in the office per week</li>
+          <li><strong>Enterprise / SIer:</strong> Varies, with a trend toward returning to the office</li>
+          <li><strong>Non-IT Traditional:</strong> Mostly 100% in the office</li>
+        </ul>
+      </div>
+
+      <p><strong>Important tip:</strong> ask about the remote work policy explicitly during your interview. Don't assume. And remember that trust (<span class="jp-term">&#20449;&#38972;</span>) in a Japanese workplace is built gradually &#8212; don't be surprised if you are asked to come to the office more frequently during your first few months.</p>
+
+      <figure style="margin:24px 0 32px;">
+        <img src="../images/ebook_images/Serene_view_from_a_Japanese_202606220633.jpeg" alt="View from a Japanese home office — remote work in Japan" style="width:100%; border-radius:4px; margin:24px 0 32px;" loading="lazy">
+      </figure>
+
+      <!-- ===== OVERTIME ===== -->
+      <h2 id="overtime">Overtime Culture &amp; Work-Life Balance</h2>
+
+      <p>The good news: since 2019, Japan has enforced the <strong>&#8220;Work Style Reform&#8221;</strong> law that caps overtime at a maximum of 45 hours per month. The IT industry is relatively better off, with average overtime around 20-30 hours per month.</p>
+
+      <p>Tips for maintaining work-life balance at a Japanese IT company:</p>
+
+      <ul>
+        <li><strong>Set clear boundaries</strong> &#8212; turn off notifications after working hours</li>
+        <li><strong>Take your paid leave (<span class="jp-term">&#26377;&#32102;</span>) regularly</strong> &#8212; the law requires a minimum of 5 days per year</li>
+        <li>Be transparent about your schedule and availability</li>
+        <li><strong>Avoid the &#8220;wait for the boss to leave first&#8221; culture</strong> &#8212; if this happens at your company, it is a red flag</li>
+      </ul>
+
+      <p>Modern IT companies and startups are typically much healthier in this regard. But at traditional companies, overtime culture can still be deeply ingrained &#8212; make this one of your primary factors when choosing a workplace.</p>
+
+      <!-- ===== PDCA ===== -->
+      <h2 id="pdca">PDCA &#8212; The Japanese Work Cycle</h2>
+
+      <p><strong>Plan &#8594; Do &#8594; Check &#8594; Act &#8594; repeat.</strong></p>
+
+      <p>PDCA shows up <em>everywhere</em> in Japanese work culture: sprint planning, bug fixing processes, performance evaluations, and even team retrospectives (which in Japan are called <span class="jp-term">&#25391;&#12426;&#36820;&#12426;</span> &#8212; furikaeri).</p>
+
+      <p>The concept is simple: there is no &#8220;perfect&#8221; endpoint. There is always room for improvement, and every cycle is an opportunity to do better than before. This is not just lip service &#8212; at Japanese companies, you will genuinely be asked to fill in reflection forms, write improvement plans, and track the progress of your improvements.</p>
+
+      <p>For developers accustomed to agile, PDCA feels familiar. The difference: in Japan, written documentation and reflection are emphasized more than in Western work cultures.</p>
+
+      <figure style="margin:24px 0 32px;">
+        <img src="../images/ebook_images/Cinematic_golden_hour_shot_of_202606250838.jpeg" alt="Golden hour in Japanese city — work-life balance" style="width:100%; border-radius:4px; margin:24px 0 32px;" loading="lazy">
+      </figure>
+
+      <!-- ===== PENUTUP ===== -->
+      <h2 id="kesimpulan">Conclusion</h2>
+
+      <p>IT work culture in Japan is not better or worse than work cultures in other countries &#8212; it is just <strong>very different</strong>. The key to success is understanding the &#8220;why&#8221; behind each rule, rather than just following them mechanically.</p>
+
+      <p>HouRenSou exists because Japan values team harmony. Nemawashi exists because unilateral decisions are considered disrespectful to other stakeholders. Rigorous code reviews exist because quality is valued more than speed.</p>
+
+      <p>If you can internalize these principles, not just follow them, you will find that Japanese work culture actually supports long-term productivity and career growth.</p>
+
+    </div>
+  </article>
+
+  <!-- ===== RELATED ARTICLES ===== -->
+  <section style="max-width:720px; margin:0 auto; padding:0 clamp(20px,5vw,48px) clamp(48px,7vw,80px);">
+    <div style="border-top:1px solid rgba(26,35,50,0.1); padding-top:40px;">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:24px;">
+        <span style="width:26px; height:2px; background:var(--accent);"></span>
+        <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Related Articles</span>
+      </div>
+
+      <div class="related-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px;">
+        <a href="./visa-kerja-jepang.html" class="related-card">
+          <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em; display:block; margin-bottom:10px;">Visa</span>
+          <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:17px; display:block; margin-bottom:8px; line-height:1.3;">IT Work Visa in Japan</span>
+          <span style="font-size:14px; color:#6b7484; line-height:1.5; display:block;">Visa types, requirements, and the application process for foreign engineers.</span>
+        </a>
+
+        <a href="./gaji-it-jepang.html" class="related-card">
+          <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em; display:block; margin-bottom:10px;">Salary</span>
+          <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:17px; display:block; margin-bottom:8px; line-height:1.3;">IT Engineer Salaries in Japan</span>
+          <span style="font-size:14px; color:#6b7484; line-height:1.5; display:block;">Salary ranges, bonuses, and total compensation by level.</span>
+        </a>
+
+        <a href="./cara-melamar-kerja-it-jepang.html" class="related-card">
+          <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em; display:block; margin-bottom:10px;">Hiring</span>
+          <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:17px; display:block; margin-bottom:8px; line-height:1.3;">IT Hiring Process in Japan</span>
+          <span style="font-size:14px; color:#6b7484; line-height:1.5; display:block;">Interview stages, coding tests, and tips for passing the selection.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- ===== COMMENTS ===== -->
+  <section id="comments" style="background:#F9F7F4;">
+    <div style="max-width:720px; margin:0 auto; padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+        <span style="width:26px; height:2px; background:var(--accent);"></span>
+        <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Discussion</span>
+      </div>
+      <h2 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(24px,3.6vw,34px); line-height:1.15; letter-spacing:-0.02em; margin:0 0 8px;">Comments</h2>
+      <p id="jdg-comments-count" style="font-size:15px; color:#6b7484; margin:0 0 28px; font-family:'Outfit',sans-serif;">0 comments</p>
+      <form id="jdg-comment-form" style="background:#fff; border:1px solid rgba(26,35,50,0.1); padding:24px; margin-bottom:32px;">
+        <div style="margin-bottom:14px;">
+          <input type="text" name="commenter-name" placeholder="Your name" required style="width:100%; font-family:'Outfit',sans-serif; font-size:15px; padding:12px 14px; border:1px solid rgba(26,35,50,0.15); background:#F9F7F4; color:#1A2332; border-radius:2px; outline:none; box-sizing:border-box;" onfocus="this.style.borderColor='#C85A00'" onblur="this.style.borderColor='rgba(26,35,50,0.15)'">
+        </div>
+        <div style="margin-bottom:14px;">
+          <textarea name="commenter-text" placeholder="Share your experience or ask a question..." required rows="4" style="width:100%; font-family:'Lora',Georgia,serif; font-size:15px; padding:12px 14px; border:1px solid rgba(26,35,50,0.15); background:#F9F7F4; color:#1A2332; border-radius:2px; outline:none; resize:vertical; box-sizing:border-box; line-height:1.6;" onfocus="this.style.borderColor='#C85A00'" onblur="this.style.borderColor='rgba(26,35,50,0.15)'"></textarea>
+        </div>
+        <button type="submit" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:15px; background:var(--accent); color:#F9F7F4; border:none; padding:12px 28px; border-radius:2px; cursor:pointer;">Post Comment</button>
+      </form>
+      <div id="jdg-comments-list"></div>
+    </div>
+  </section>
+
+<!-- ===== FOOTER ===== -->
+  <footer style="background:#F9F7F4;">
+    <div style="max-width:1180px; margin:0 auto; padding:clamp(44px,6vw,68px) clamp(20px,5vw,48px) 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:36px;">
+      <div style="grid-column:1/-1; max-width:1180px;">
+        <div style="display:flex; align-items:center; gap:11px; margin-bottom:14px;">
+          <span style="display:inline-flex; width:26px; height:26px; background:#1A2332; position:relative;">
+            <span style="position:absolute; top:5px; left:4px; right:4px; height:3px; background:var(--accent);"></span>
+          </span>
+          <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:16px;">Japan Dev Guide</span>
+        </div>
+        <p style="font-size:15px; color:#6b7484; max-width:26em; margin:0 0 30px; line-height:1.55;">A free, public resource for international developers building a career in Japan.</p>
+      </div>
+      <div>
+        <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Topics</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
+          <a href="../index.html#pillars" class="footer-link" style="color:#3a4456; text-decoration:none;">Visa &amp; work permits</a>
+          <a href="../index.html#salaries" class="footer-link" style="color:#3a4456; text-decoration:none;">Salaries</a>
+          <a href="./cara-melamar-kerja-it-jepang.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Hiring process</a>
+          <a href="./budaya-kerja-it-jepang.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Company culture</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Resource</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
+          <a href="../about.html" class="footer-link" style="color:#3a4456; text-decoration:none;">About</a>
+          <a href="../articles.html" class="footer-link" style="color:#3a4456; text-decoration:none;">All Articles</a>
+          <a href="../privacy.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Privacy Policy</a>
+          <a href="../terms.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Terms of Service</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Connect</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
+          <a href="https://instagram.com/vetraap" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://threads.net/@vetraap" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Threads</a>
+          <a href="../about.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px; margin:0 auto; padding:22px clamp(20px,5vw,48px) 40px; border-top:1px solid rgba(26,35,50,0.1); display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-family:'Outfit',sans-serif; font-size:13px; color:#9aa1ad;">
+      <span>&copy; 2026 Japan Dev Guide. Free to read, free to share.</span>
+      <div style="display:flex; gap:16px;">
+        <a href="../privacy.html" style="color:#9aa1ad; text-decoration:none;">Privacy</a>
+        <a href="../terms.html" style="color:#9aa1ad; text-decoration:none;">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="../js/comments.js"></script>
+</body>
+</html>

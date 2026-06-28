@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japan Dev Guide — Your Complete Guide to Tech Careers in Japan (2026)</title>
+<meta name="description" content="The complete guide to IT careers in Japan: visas, salaries, hiring process, work culture, cost of living & career growth. Written by an engineer who's been on the ground for 6 years.">
+<meta name="keywords" content="IT jobs Japan, work visa Japan, IT salary Japan, software engineer Japan, foreign developer Japan, tech career Japan">
+<meta name="author" content="Vetra Aprilia">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://japandevguide.com/">
+<meta property="og:title" content="Japan Dev Guide — Your Guide to Tech Careers in Japan">
+<meta property="og:description" content="Visas, salaries, hiring, work culture & career tips for IT jobs in Japan — from the real experience of an engineer in Osaka.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://japandevguide.com/">
+<meta property="og:image" content="https://japandevguide.com/images/ebook_images/Aerial_view_of_Osaka_city_202606160820.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://japandevguide.com/images/ebook_images/Aerial_view_of_Osaka_city_202606160820.jpeg">
+<meta name="twitter:title" content="Japan Dev Guide — Your Guide to Tech Careers in Japan">
+<meta name="twitter:description" content="The complete guide to IT careers in Japan for foreign developers. Visas, salaries, work culture & career growth.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Japan Dev Guide",
+  "description": "The complete guide to IT careers in Japan for foreign developers",
+  "author": {
+    "@type": "Person",
+    "name": "Vetra Aprilia",
+    "jobTitle": "Backend Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Osaka", "addressCountry": "JP" }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #C85A00;
+    --accent2: #E8745B;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F9F7F4; color: #1A2332; font-family: 'Lora', Georgia, serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  ::selection { background: var(--accent); color: #F9F7F4; }
+  @keyframes jdgFade { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes jdgRise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+  /* Links hover */
+  .nav-link { transition: color 0.2s; }
+  .nav-link:hover { color: #1A2332 !important; }
+  .pillar-card { transition: background 0.2s; }
+  .pillar-card:hover { background: #FBFAF8 !important; }
+  .pillar-cta { transition: border-color 0.2s; }
+  .pillar-card:hover .pillar-cta { border-color: var(--accent); }
+
+  /* Fade-in animation */
+  .jdg-fade { animation: jdgFade 0.6s ease both; }
+  .jdg-fade-d1 { animation-delay: 0.1s; }
+  .jdg-fade-d2 { animation-delay: 0.2s; }
+  .jdg-fade-d3 { animation-delay: 0.3s; }
+
+  /* Subscribe form */
+  .subscribe-input:focus { border-color: var(--accent) !important; }
+  .subscribe-btn:hover { opacity: 0.9; }
+
+  /* Footer links */
+  .footer-link:hover { color: #1A2332 !important; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr !important; }
+    .hero-panel { display: none; }
+    .nav-links-desktop { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(10px); -webkit-backdrop-filter:saturate(140%) blur(10px); background:rgba(249,247,244,0.82); border-bottom:1px solid rgba(26,35,50,0.08);">
+    <div style="max-width:1180px; margin:0 auto; padding:0 clamp(20px,5vw,48px); height:68px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="#top" style="display:flex; align-items:center; gap:11px; text-decoration:none; color:inherit;">
+        <span style="display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; background:#1A2332; position:relative;">
+          <span style="position:absolute; top:6px; left:5px; right:5px; height:3px; background:var(--accent);"></span>
+          <span style="position:absolute; top:11px; left:8px; width:3px; bottom:6px; background:#F9F7F4;"></span>
+          <span style="position:absolute; top:11px; right:8px; width:3px; bottom:6px; background:#F9F7F4;"></span>
+        </span>
+        <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:17px; letter-spacing:-0.01em;">Japan Dev Guide</span>
+      </a>
+      <div class="nav-links-desktop" style="display:flex; align-items:center; gap:clamp(14px,3vw,34px); font-family:'Outfit',sans-serif; font-size:14.5px; font-weight:500;">
+        <a href="./articles.html" class="nav-link" style="color:#3a4456; text-decoration:none;">Articles</a>
+        <a href="./articles.html#news" class="nav-link" style="color:#3a4456; text-decoration:none;">News</a>
+        <a href="./about.html" class="nav-link" style="color:#3a4456; text-decoration:none;">About</a>
+        <a href="#pillars" style="background:#1A2332; color:#F9F7F4; text-decoration:none; padding:9px 18px; border-radius:2px; font-weight:600;">Read the Guide</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="top" style="position:relative; max-width:1180px; margin:0 auto; padding:clamp(56px,9vw,104px) clamp(20px,5vw,48px) clamp(48px,7vw,88px);">
+    <div class="hero-grid" style="display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:clamp(32px,6vw,72px); align-items:center;">
+      <div class="jdg-fade">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:26px;">
+          <span style="width:26px; height:2px; background:var(--accent);"></span>
+          <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">A field guide, not a brochure</span>
+        </div>
+        <h1 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(38px,6.4vw,68px); line-height:1.04; letter-spacing:-0.025em; margin:0 0 24px;">
+          Your guide to<br>tech careers<br>in <span style="position:relative; white-space:nowrap;">Japan<span style="position:absolute; left:0; right:0; bottom:6px; height:10px; background:rgba(232,116,91,0.32); z-index:-1;"></span></span>
+        </h1>
+        <p style="font-size:clamp(17px,2.1vw,20px); line-height:1.62; color:#454f60; margin:0 0 34px; max-width:30em;">
+          Visas, salaries, hiring, and the unwritten rules of working in Japanese tech — explained honestly by someone who moved here and stayed. No recruiter spin, no hype.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px;">
+          <a href="#pillars" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:15.5px; background:var(--accent); color:#F9F7F4; text-decoration:none; padding:14px 28px; border-radius:2px; box-shadow:0 1px 0 rgba(26,35,50,0.1);">Read the Guide &#8594;</a>
+          <a href="#salaries" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:15.5px; color:#1A2332; text-decoration:none; padding:14px 4px; border-bottom:2px solid rgba(26,35,50,0.18);">See real salaries</a>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:28px; margin-top:42px;">
+          <div><div style="font-family:'Outfit',sans-serif; font-weight:700; font-size:24px;">8</div><div style="font-size:13.5px; color:#6b7484;">in-depth topics</div></div>
+          <div style="width:1px; background:rgba(26,35,50,0.12);"></div>
+          <div><div style="font-family:'Outfit',sans-serif; font-weight:700; font-size:24px;">100%</div><div style="font-size:13.5px; color:#6b7484;">free &amp; public</div></div>
+        </div>
+      </div>
+
+      <!-- Hero image -->
+      <div class="hero-panel jdg-fade jdg-fade-d2" style="position:relative; aspect-ratio:4/5; min-height:320px; background:#1A2332; overflow:hidden;">
+        <img src="./images/ebook_images/Aerial_cinematic_view_of_Osaka_202606220632.jpeg" alt="Software engineer overlooking Osaka cityscape at sunset" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,35,50,0.7) 0%, transparent 50%);"></div>
+        <span style="position:absolute; bottom:34px; right:34px; font-family:'Outfit',sans-serif; font-size:11px; letter-spacing:0.22em; color:rgba(249,247,244,0.7); writing-mode:vertical-rl;">OSAKA &#183; &#22823;&#38442;</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PILLARS ===== -->
+  <section id="pillars" style="background:#fff; border-top:1px solid rgba(26,35,50,0.07); border-bottom:1px solid rgba(26,35,50,0.07);">
+    <div style="max-width:1180px; margin:0 auto; padding:clamp(56px,8vw,96px) clamp(20px,5vw,48px);">
+      <div style="max-width:34em; margin-bottom:clamp(34px,5vw,54px);">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+          <span style="width:26px; height:2px; background:var(--accent);"></span>
+          <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">What's inside</span>
+        </div>
+        <h2 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(28px,4.2vw,42px); line-height:1.1; letter-spacing:-0.02em; margin:0 0 16px;">Eight topics, end to end</h2>
+        <p style="font-size:18px; line-height:1.6; color:#454f60; margin:0;">Everything from landing the visa to negotiating a raise — written for international developers, grounded in how the system actually works.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1px; background:rgba(26,35,50,0.1); border:1px solid rgba(26,35,50,0.1);">
+
+        <!-- Pillar 01 -->
+        <a href="./articles/visa-kerja-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">01</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#12499;&#12470;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Visa &amp; work permits</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Which status of residence fits you, how sponsorship works, and the path to permanent residency.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Sort your status &#8594;</span>
+        </a>
+
+        <!-- Pillar 02 -->
+        <a href="./articles/budaya-kerja-it-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">02</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#25991;&#21270;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Company culture</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Hierarchy, meetings, nemawashi, and what 'foreign-friendly' actually means in practice.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Know before you join &#8594;</span>
+        </a>
+
+        <!-- Pillar 03 -->
+        <a href="./articles/gaji-it-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">03</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#32102;&#19982;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Salary insights</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Real pay ranges by role and seniority — and how to negotiate without breaking local norms.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">See the numbers &#8594;</span>
+        </a>
+
+        <!-- Pillar 04 -->
+        <a href="./articles/cara-melamar-kerja-it-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">04</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#25505;&#29992;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Hiring process</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Where the jobs are, how interviews run, and the resume format Japanese recruiters expect.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Land the interview &#8594;</span>
+        </a>
+
+        <!-- Pillar 05 -->
+        <a href="./articles/biaya-hidup-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">05</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#29983;&#27963;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Living costs</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Rent, taxes, health insurance, and what your take-home really covers in Tokyo vs. elsewhere.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Budget your move &#8594;</span>
+        </a>
+
+        <!-- Pillar 06 -->
+        <a href="./articles/tech-stack-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">06</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#20210;&#38291;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Tech communities</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Meetups, Slack groups, and conferences where international engineers actually connect.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Find your people &#8594;</span>
+        </a>
+
+        <!-- Pillar 07 -->
+        <a href="./articles/bahasa-jepang-untuk-engineer.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">07</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#35328;&#35486;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Language tips</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">How much Japanese you truly need, JLPT for work, and the keigo that matters on the job.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Start speaking &#8594;</span>
+        </a>
+
+        <!-- Pillar 08 -->
+        <a href="./articles/karir-it-jepang.html" class="pillar-card" style="background:#fff; padding:clamp(26px,3vw,34px); text-decoration:none; color:inherit; display:block; position:relative;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:13px; color:var(--accent); letter-spacing:0.04em;">08</span>
+            <span style="font-size:13px; font-family:'Outfit',sans-serif; color:#9aa1ad;">&#25104;&#38263;</span>
+          </div>
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px;">Career progression</h3>
+          <p style="font-size:15.5px; line-height:1.58; color:#5a6373; margin:0 0 18px;">Switching jobs, getting promoted, and growing from engineer to lead in the Japanese market.</p>
+          <span class="pillar-cta" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:#1A2332; border-bottom:2px solid rgba(200,90,0,0.4); padding-bottom:2px;">Plan the next step &#8594;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAMPLE CONTENT: SALARIES ===== -->
+  <section id="salaries" style="max-width:1180px; margin:0 auto; padding:clamp(56px,8vw,100px) clamp(20px,5vw,48px);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(36px,5vw,64px); align-items:start;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+          <span style="width:26px; height:2px; background:var(--accent);"></span>
+          <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Sample chapter</span>
+        </div>
+        <h2 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(28px,4.2vw,42px); line-height:1.1; letter-spacing:-0.02em; margin:0 0 18px;">Real salaries, by role</h2>
+        <p style="font-size:18px; line-height:1.64; color:#454f60; margin:0 0 24px;">Self-reported base pay from foreign and bilingual engineers in the Tokyo market, in millions of yen per year (&#165;M). Foreign-friendly employers and global firms sit at the top of each band.</p>
+        <div style="display:flex; align-items:baseline; gap:12px; padding:18px 0; border-top:1px solid rgba(26,35,50,0.12); border-bottom:1px solid rgba(26,35,50,0.12);">
+          <span style="font-family:'Outfit',sans-serif; font-weight:800; font-size:40px; color:var(--accent); letter-spacing:-0.02em;">&#165;8.4M</span>
+          <span style="font-size:15px; color:#5a6373; line-height:1.4;">median total comp,<br>mid-level engineer</span>
+        </div>
+        <p style="font-size:13.5px; color:#8a909c; margin:16px 0 0; font-style:italic;">Figures are illustrative ranges for layout — replace with your dataset before launch.</p>
+      </div>
+
+      <div style="background:#1A2332; padding:clamp(26px,3vw,38px); color:#F9F7F4;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:26px;">
+          <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:15px;">Base salary range</span>
+          <span style="font-family:'Outfit',sans-serif; font-size:12.5px; color:rgba(249,247,244,0.55);">&#165;M / year</span>
+        </div>
+
+        <!-- Junior engineer -->
+        <div style="margin-bottom:22px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:500; font-size:15px;">Junior engineer</span>
+            <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:var(--accent2);">&#165;4&#8211;6M</span>
+          </div>
+          <div style="position:relative; height:8px; background:rgba(249,247,244,0.1); border-radius:4px;">
+            <div style="position:absolute; top:0; bottom:0; left:0%; right:62%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <!-- Mid-level engineer -->
+        <div style="margin-bottom:22px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:500; font-size:15px;">Mid-level engineer</span>
+            <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:var(--accent2);">&#165;6&#8211;10M</span>
+          </div>
+          <div style="position:relative; height:8px; background:rgba(249,247,244,0.1); border-radius:4px;">
+            <div style="position:absolute; top:0; bottom:0; left:18%; right:38%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <!-- Senior engineer -->
+        <div style="margin-bottom:22px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:500; font-size:15px;">Senior engineer</span>
+            <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:var(--accent2);">&#165;9&#8211;14M</span>
+          </div>
+          <div style="position:relative; height:8px; background:rgba(249,247,244,0.1); border-radius:4px;">
+            <div style="position:absolute; top:0; bottom:0; left:40%; right:16%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <!-- Engineering manager -->
+        <div style="margin-bottom:22px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:500; font-size:15px;">Engineering manager</span>
+            <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:var(--accent2);">&#165;12&#8211;17M</span>
+          </div>
+          <div style="position:relative; height:8px; background:rgba(249,247,244,0.1); border-radius:4px;">
+            <div style="position:absolute; top:0; bottom:0; left:60%; right:4%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <!-- Staff / global firm -->
+        <div style="margin-bottom:22px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+            <span style="font-family:'Outfit',sans-serif; font-weight:500; font-size:15px;">Staff / global firm</span>
+            <span style="font-family:'Outfit',sans-serif; font-weight:600; font-size:14px; color:var(--accent2);">&#165;15&#8211;22M</span>
+          </div>
+          <div style="position:relative; height:8px; background:rgba(249,247,244,0.1); border-radius:4px;">
+            <div style="position:absolute; top:0; bottom:0; left:75%; right:0%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; font-family:'Outfit',sans-serif; font-size:11.5px; color:rgba(249,247,244,0.4); margin-top:22px; padding-top:14px; border-top:1px solid rgba(249,247,244,0.12);">
+          <span>&#165;4M</span><span>&#165;10M</span><span>&#165;18M+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section id="subscribe" style="position:relative; background:#1A2332; color:#F9F7F4; overflow:hidden;">
+    <div style="position:absolute; inset:0; opacity:0.5; background-image:repeating-linear-gradient(0deg, transparent, transparent 46px, rgba(249,247,244,0.05) 46px, rgba(249,247,244,0.05) 47px);"></div>
+    <span style="position:absolute; top:0; left:clamp(20px,12vw,160px); width:6px; height:100%; background:rgba(200,90,0,0.45);"></span>
+    <div style="position:relative; max-width:760px; margin:0 auto; padding:clamp(60px,9vw,104px) clamp(20px,5vw,48px); text-align:center;">
+      <div style="display:inline-flex; align-items:center; gap:10px; margin-bottom:22px;">
+        <span style="width:26px; height:2px; background:var(--accent2);"></span>
+        <span style="font-family:'Outfit',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent2);">Stay updated</span>
+        <span style="width:26px; height:2px; background:var(--accent2);"></span>
+      </div>
+      <h2 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(28px,4.4vw,44px); line-height:1.1; letter-spacing:-0.02em; margin:0 0 18px;">New chapters, in your inbox</h2>
+      <p style="font-size:18px; line-height:1.62; color:rgba(249,247,244,0.72); margin:0 auto 34px; max-width:30em;">A short email when a new topic drops or visa rules change. No spam, unsubscribe anytime.</p>
+
+      <!-- Success state (hidden by default) -->
+      <div id="subscribe-success" style="display:none; align-items:center; gap:12px; font-family:'Outfit',sans-serif; font-weight:600; font-size:17px; color:var(--accent2); background:rgba(232,116,91,0.1); padding:18px 28px; border:1px solid rgba(232,116,91,0.4); justify-content:center;">
+        &#10003; You're on the list &#8212; &#12354;&#12426;&#12364;&#12392;&#12358;!
+      </div>
+
+      <!-- Form -->
+      <form id="subscribe-form" onsubmit="handleSubscribe(event)" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; max-width:480px; margin:0 auto;">
+        <input type="email" required placeholder="you@example.com" class="subscribe-input" style="flex:1; min-width:220px; font-family:'Outfit',sans-serif; font-size:16px; padding:15px 18px; border:1px solid rgba(249,247,244,0.25); background:rgba(249,247,244,0.06); color:#F9F7F4; border-radius:2px; outline:none;">
+        <button type="submit" class="subscribe-btn" style="font-family:'Outfit',sans-serif; font-weight:600; font-size:16px; background:var(--accent); color:#F9F7F4; border:none; padding:15px 30px; border-radius:2px; cursor:pointer;">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#F9F7F4;">
+    <div style="max-width:1180px; margin:0 auto; padding:clamp(44px,6vw,68px) clamp(20px,5vw,48px) 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:36px;">
+      <div style="grid-column:1/-1; max-width:1180px;">
+        <div style="display:flex; align-items:center; gap:11px; margin-bottom:14px;">
+          <span style="display:inline-flex; width:26px; height:26px; background:#1A2332; position:relative;">
+            <span style="position:absolute; top:5px; left:4px; right:4px; height:3px; background:var(--accent);"></span>
+          </span>
+          <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:16px;">Japan Dev Guide</span>
+        </div>
+        <p style="font-size:15px; color:#6b7484; max-width:26em; margin:0 0 30px; line-height:1.55;">A free, public resource for international developers building a career in Japan.</p>
+      </div>
+      <div>
+        <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Topics</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
+          <a href="./articles/visa-kerja-jepang.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Visa &amp; work permits</a>
+          <a href="./articles/gaji-it-jepang.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Salaries</a>
+          <a href="./articles/cara-melamar-kerja-it-jepang.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Hiring process</a>
+          <a href="./articles/budaya-kerja-it-jepang.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Company culture</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Resource</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
+          <a href="./about.html" class="footer-link" style="color:#3a4456; text-decoration:none;">About</a>
+          <a href="./articles.html" class="footer-link" style="color:#3a4456; text-decoration:none;">All Articles</a>
+          <a href="./privacy.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Privacy Policy</a>
+          <a href="./terms.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Terms of Service</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Connect</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
+          <a href="https://instagram.com/vetraap" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://threads.net/@vetraap" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Threads</a>
+          <a href="./about.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px; margin:0 auto; padding:22px clamp(20px,5vw,48px) 40px; border-top:1px solid rgba(26,35,50,0.1); display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-family:'Outfit',sans-serif; font-size:13px; color:#9aa1ad;">
+      <span>&#169; 2026 Japan Dev Guide. Free to read, free to share.</span>
+      <div style="display:flex; gap:16px;">
+        <a href="./privacy.html" style="color:#9aa1ad; text-decoration:none;">Privacy</a>
+        <a href="./terms.html" style="color:#9aa1ad; text-decoration:none;">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubscribe(e) {
+      e.preventDefault();
+      document.getElementById('subscribe-form').style.display = 'none';
+      document.getElementById('subscribe-success').style.display = 'inline-flex';
+    }
+  </script>
+
+</body>
+</html>
