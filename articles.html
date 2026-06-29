@@ -106,21 +106,46 @@
     background: #fff;
     border: 1px solid rgba(26,35,50,0.1);
     border-radius: 2px;
-    padding: 28px;
+    padding: 0;
     text-decoration: none;
     color: inherit;
+    overflow: hidden;
     transition: border-color 0.2s, background 0.2s;
   }
   .article-card:hover {
     border-color: var(--accent);
     background: #FEFDFB;
   }
+  .article-card-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.85);
+    transition: filter 0.3s;
+  }
+  .article-card:hover .article-card-img { filter: saturate(1.1); }
+  .article-card-body { padding: 22px 24px; display:flex; flex-direction:column; flex:1; }
+  .article-card-badge {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(200,90,0,0.08);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
   .article-card-title {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.3;
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     color: #1A2332;
   }
   .article-card-desc {
@@ -129,7 +154,18 @@
     line-height: 1.62;
     color: #6b7484;
     margin: 0 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
+  }
+  .article-card-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12.5px;
+    color: #9aa1ad;
+    padding-top: 12px;
+    border-top: 1px solid rgba(26,35,50,0.06);
+    margin-top: auto;
   }
   .article-card-cta {
     font-family: 'Outfit', sans-serif;
@@ -137,6 +173,7 @@
     font-size: 14px;
     color: var(--accent);
     margin-top: auto;
+    display: none;
   }
   .articles-grid {
     display: grid;
@@ -267,57 +304,129 @@
     <div class="articles-grid">
 
       <a href="./articles/visa-kerja-jepang.html" class="article-card">
-        <h2 class="article-card-title">IT Work Visas &amp; Permits</h2>
-        <p class="article-card-desc">Everything about Engineer/Specialist in Humanities visa, HSP, and the COE process for tech workers.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Indonesian_passport_and_Japanese_work_202606160830.jpeg" alt="Visa documents" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Visa</span>
+          <h2 class="article-card-title">IT Work Visas &amp; Permits</h2>
+          <p class="article-card-desc">Everything about Engineer/Specialist in Humanities visa, HSP, and the COE process for tech workers.</p>
+          <div class="article-card-meta">
+            <span>12 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/gaji-it-jepang.html" class="article-card">
-        <h2 class="article-card-title">IT Salary Guide</h2>
-        <p class="article-card-desc">Salary ranges by level and city, bonus systems, tax breakdown, and negotiation strategies.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Japanese_yen_banknotes_and_coins_202606160829.jpeg" alt="Japanese yen salary" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Salary</span>
+          <h2 class="article-card-title">IT Salary Guide</h2>
+          <p class="article-card-desc">Salary ranges by level and city, bonus systems, tax breakdown, and negotiation strategies.</p>
+          <div class="article-card-meta">
+            <span>15 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/cara-melamar-kerja-it-jepang.html" class="article-card">
-        <h2 class="article-card-title">How to Apply for IT Jobs</h2>
-        <p class="article-card-desc">Job platforms, CV formats, the 5-stage interview process, and in-demand skills.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Person_browsing_Wantedly_job_platform_202606160830.jpeg" alt="Job hunting platform" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Hiring</span>
+          <h2 class="article-card-title">How to Apply for IT Jobs</h2>
+          <p class="article-card-desc">Job platforms, CV formats, the 5-stage interview process, and in-demand skills.</p>
+          <div class="article-card-meta">
+            <span>13 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/budaya-kerja-it-jepang.html" class="article-card">
-        <h2 class="article-card-title">Japanese IT Work Culture</h2>
-        <p class="article-card-desc">HouRenSou, meetings, code review etiquette, and the unwritten rules of Japanese offices.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Japanese_office_morning_meeting_scene_202606220633.jpeg" alt="Japanese office meeting" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Culture</span>
+          <h2 class="article-card-title">Japanese IT Work Culture</h2>
+          <p class="article-card-desc">HouRenSou, meetings, code review etiquette, and the unwritten rules of Japanese offices.</p>
+          <div class="article-card-meta">
+            <span>14 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/biaya-hidup-jepang.html" class="article-card">
-        <h2 class="article-card-title">Cost of Living in Japan</h2>
-        <p class="article-card-desc">City-by-city expense comparison, apartment hunting tips, and monthly budget planning.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Cozy_Japanese_apartment_interior_in_202606160830.jpeg" alt="Japanese apartment" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Living</span>
+          <h2 class="article-card-title">Cost of Living in Japan</h2>
+          <p class="article-card-desc">City-by-city expense comparison, apartment hunting tips, and monthly budget planning.</p>
+          <div class="article-card-meta">
+            <span>11 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/tech-stack-jepang.html" class="article-card">
-        <h2 class="article-card-title">Tech Stack &amp; Communities</h2>
-        <p class="article-card-desc">Popular technologies, development tools, meetups, and professional communities in Japan.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Cinematic_close-up_of_a_code_202606250840.jpeg" alt="Code on screen" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Tech</span>
+          <h2 class="article-card-title">Tech Stack &amp; Communities</h2>
+          <p class="article-card-desc">Popular technologies, development tools, meetups, and professional communities in Japan.</p>
+          <div class="article-card-meta">
+            <span>10 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/bahasa-jepang-untuk-engineer.html" class="article-card">
-        <h2 class="article-card-title">Japanese Language for Engineers</h2>
-        <p class="article-card-desc">JLPT requirements, technical IT vocabulary, keigo at work, and study tips.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Young_Southeast_Asian_woman_studying_202606220633.jpeg" alt="Studying Japanese" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Language</span>
+          <h2 class="article-card-title">Japanese Language for Engineers</h2>
+          <p class="article-card-desc">JLPT requirements, technical IT vocabulary, keigo at work, and study tips.</p>
+          <div class="article-card-meta">
+            <span>12 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/karir-it-jepang.html" class="article-card">
-        <h2 class="article-card-title">Career Growth &amp; Progression</h2>
-        <p class="article-card-desc">Promotion timeline, job switching (tenshoku), freelancing, and paths to permanent residency.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Cinematic_shot_of_a_winding_202606250840.jpeg" alt="Career path" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Career</span>
+          <h2 class="article-card-title">Career Growth &amp; Progression</h2>
+          <p class="article-card-desc">Promotion timeline, job switching (tenshoku), freelancing, and paths to permanent residency.</p>
+          <div class="article-card-meta">
+            <span>14 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
       <a href="./articles/interview-it-jepang.html" class="article-card">
-        <h2 class="article-card-title">IT Job Interview Guide</h2>
-        <p class="article-card-desc">Interview stages, coding tests, common questions, cultural etiquette, and tips for foreign engineers.</p>
-        <span class="article-card-cta">Read article &#8594;</span>
+        <img class="article-card-img" src="./images/ebook_images/Professional_video_call_job_interview_202606161301.jpeg" alt="Job interview" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-card-badge">Interview</span>
+          <h2 class="article-card-title">IT Job Interview Guide</h2>
+          <p class="article-card-desc">Interview stages, coding tests, common questions, cultural etiquette, and tips for foreign engineers.</p>
+          <div class="article-card-meta">
+            <span>15 min read</span>
+            <span style="width:3px; height:3px; background:#bfc4cd; border-radius:50%;"></span>
+            <span>Jun 2026</span>
+          </div>
+        </div>
       </a>
 
     </div>
@@ -543,8 +652,8 @@
       <div>
         <div style="font-family:'Outfit',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#9aa1ad; margin-bottom:14px;">Connect</div>
         <div style="display:flex; flex-direction:column; gap:10px; font-size:15px;">
-          <a href="https://instagram.com/vetraap" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://threads.net/@vetraap" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Threads</a>
+          <a href="https://instagram.com/japandevguide" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://threads.net/@japandevguide" class="footer-link" style="color:#3a4456; text-decoration:none;" target="_blank" rel="noopener">Threads</a>
           <a href="./about.html" class="footer-link" style="color:#3a4456; text-decoration:none;">Contact</a>
         </div>
       </div>
