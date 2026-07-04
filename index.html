@@ -37,7 +37,8 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
 <style>
   :root {
     --accent: #C85A00;
@@ -165,7 +166,7 @@
 
         <!-- Pillar 01 -->
         <a href="./articles/it-work-visa-japan.html" class="pillar-card" style="background:#fff; padding:0; text-decoration:none; color:inherit; display:block; position:relative; overflow:hidden;">
-          <img class="pillar-img" src="./images/ebook_images/Indonesian_passport_and_Japanese_work_202606160830.jpeg" alt="Visa and passport documents" loading="lazy">
+          <img class="pillar-img" src="./images/ebook_images/Indonesian_passport_and_Japanese_work_202606160830.jpeg" alt="Visa and passport documents" loading="eager" fetchpriority="high">
           <div style="padding:clamp(20px,2.5vw,28px);">
             <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
               <span class="pillar-badge">Visa</span>
