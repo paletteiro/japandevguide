@@ -1,0 +1,35 @@
+# Japan Dev Guide
+
+> A practical resource for international software developers building a career in Japan. Covers IT visas, salaries, job hunting, work culture, Japanese language for engineers, cost of living, housing, taxes, and long-term residency — written from the perspective of a foreign developer living and working in Japan.
+
+## Core Guides
+
+- [IT Work Visa in Japan](https://japandevguide.com/articles/it-work-visa-japan.html): Overview of work visa types for IT engineers including the Engineering/Humanities visa (Gijinkoku) and the Highly Skilled Professional (HSP) visa.
+- [Japan Permanent Residency for IT Engineers](https://japandevguide.com/articles/japan-permanent-residency-engineer.html): How to qualify for Japan PR in 1–3 years via the HSP visa, including the full points calculator and application process.
+- [IT Salary Guide Japan](https://japandevguide.com/articles/it-salary-japan.html): Real salary ranges for software engineers in Japan by role and seniority, with take-home pay breakdowns.
+- [Japan Income Tax Guide for Foreign Engineers](https://japandevguide.com/articles/japan-tax-guide-engineers.html): Income tax brackets, year-end adjustment (nenmatsu chosei), furusato nozei, iDeCo, and social insurance explained for foreign developers.
+- [How to Get an IT Job in Japan](https://japandevguide.com/articles/how-to-get-it-job-japan.html): Job search platforms, application process, resume format, and how to get hired as a foreign engineer in Japan.
+- [IT Job Interview Guide Japan](https://japandevguide.com/articles/it-job-interview-japan.html): Interview stages, coding tests, common questions, and cultural etiquette for foreign software engineers.
+- [Top IT Companies in Japan Hiring Foreigners](https://japandevguide.com/articles/top-it-companies-japan.html): Ranked list of companies that actively hire international engineers, with salary ranges and tech stacks.
+- [IT Jobs in Japan Without Japanese](https://japandevguide.com/articles/it-jobs-japan-without-japanese.html): Which companies operate in English, what "English OK" really means in job listings, and the long-term reality of working without Japanese.
+
+## Living in Japan
+
+- [Cost of Living in Japan for IT Engineers](https://japandevguide.com/articles/cost-of-living-japan.html): Monthly expenses breakdown — rent, food, transport, health insurance, and how far an IT salary goes in Tokyo vs other cities.
+- [Apartment Hunting in Japan for Developers](https://japandevguide.com/articles/apartment-hunting-japan.html): Apartment types, upfront costs (shikikin/reikin), renting as a foreigner, neighborhoods by city, and recommended search platforms.
+- [Why Live in Japan as a Developer?](https://japandevguide.com/articles/why-live-in-japan-developer.html): Quality of life, infrastructure, safety, career opportunities, and an honest reality check for developers considering relocating to Japan.
+
+## Career & Culture
+
+- [IT Work Culture in Japan](https://japandevguide.com/articles/it-work-culture-japan.html): Hierarchy, meeting culture, nemawashi, overtime norms, and what "foreign-friendly" actually means in Japanese tech companies.
+- [IT Career Progression in Japan](https://japandevguide.com/articles/it-career-japan.html): How to grow from engineer to lead, switching jobs, certifications that matter, and navigating promotion in Japan.
+- [Tech Stack in Japan](https://japandevguide.com/articles/tech-stack-japan.html): Popular languages, frameworks, and tools used by Japanese tech companies, plus the developer community and meetup scene.
+
+## Language
+
+- [Japanese for Engineers](https://japandevguide.com/articles/japanese-for-engineers.html): How much Japanese you actually need for IT work, JLPT recommendations by career goal, and practical study strategy for working developers.
+
+## Site
+
+- [All Articles](https://japandevguide.com/articles.html): Full index of all guides and articles on Japan Dev Guide.
+- [About](https://japandevguide.com/about.html): About the author and the purpose of Japan Dev Guide.
