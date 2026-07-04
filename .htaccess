@@ -25,13 +25,17 @@ RewriteRule ^index\.html$ / [R=301,L]
   ExpiresByType text/html         "access plus 1 hour"
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(jpg|jpeg|png|webp|svg|ico)$">
+  <FilesMatch "\.(jpg|jpeg|webp|png|svg|ico)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
+    Header unset ETag
   </FilesMatch>
   <FilesMatch "\.(css|js)$">
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
 </IfModule>
+# Fallback: set cache via FileETag + mod_rewrite for hosts without mod_headers
+FileETag None
 
 # ─── Enable Gzip compression ────────────────────────────────────────────────
 <IfModule mod_deflate.c>
