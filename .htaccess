@@ -1,4 +1,5 @@
 Options -Indexes
+ErrorDocument 404 /404.html
 RewriteEngine On
 
 # ─── Force HTTPS (http:// → https://) ──────────────────────────────────────
@@ -44,14 +45,14 @@ FileETag None
 
 # ─── 301 Redirects: old Indonesian slugs → new English slugs ───────────────
 
-Redirect 301 /articles/bahasa-jepang-untuk-engineer.html /articles/japanese-for-engineers.html
-Redirect 301 /articles/biaya-hidup-jepang.html /articles/cost-of-living-japan.html
-Redirect 301 /articles/budaya-kerja-it-jepang.html /articles/it-work-culture-japan.html
-Redirect 301 /articles/cara-melamar-kerja-it-jepang.html /articles/how-to-get-it-job-japan.html
-Redirect 301 /articles/gaji-it-jepang.html /articles/it-salary-japan.html
-Redirect 301 /articles/interview-it-jepang.html /articles/it-job-interview-japan.html
-Redirect 301 /articles/karir-it-jepang.html /articles/it-career-japan.html
-Redirect 301 /articles/kelebihan-tinggal-di-jepang.html /articles/why-live-in-japan-developer.html
-Redirect 301 /articles/tech-stack-jepang.html /articles/tech-stack-japan.html
-Redirect 301 /articles/top-perusahaan-it-jepang.html /articles/top-it-companies-japan.html
-Redirect 301 /articles/visa-kerja-jepang.html /articles/it-work-visa-japan.html
+RewriteRule ^articles/bahasa-jepang-untuk-engineer\.html$ /articles/japanese-for-engineers.html [R=301,L]
+RewriteRule ^articles/biaya-hidup-jepang\.html$ /articles/cost-of-living-japan.html [R=301,L]
+RewriteRule ^articles/budaya-kerja-it-jepang\.html$ /articles/it-work-culture-japan.html [R=301,L]
+RewriteRule ^articles/cara-melamar-kerja-it-jepang\.html$ /articles/how-to-get-it-job-japan.html [R=301,L]
+RewriteRule ^articles/gaji-it-jepang\.html$ /articles/it-salary-japan.html [R=301,L]
+RewriteRule ^articles/interview-it-jepang\.html$ /articles/it-job-interview-japan.html [R=301,L]
+RewriteRule ^articles/karir-it-jepang\.html$ /articles/it-career-japan.html [R=301,L]
+RewriteRule ^articles/kelebihan-tinggal-di-jepang\.html$ /articles/why-live-in-japan-developer.html [R=301,L]
+RewriteRule ^articles/tech-stack-jepang\.html$ /articles/tech-stack-japan.html [R=301,L]
+RewriteRule ^articles/top-perusahaan-it-jepang\.html$ /articles/top-it-companies-japan.html [R=301,L]
+RewriteRule ^articles/visa-kerja-jepang\.html$ /articles/it-work-visa-japan.html [R=301,L]
