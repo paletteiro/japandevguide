@@ -53,6 +53,16 @@
   @media (max-width: 768px) {
     .nav-links-desktop { display: none !important; }
   }
+
+  /* ===== MOBILE NAV ===== */
+  .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;color:#1A2332;line-height:0;flex-shrink:0;}
+  .nav-overlay{display:none;position:fixed;inset:0;z-index:98;background:rgba(26,35,50,0.45);}
+  .nav-mobile{display:none;position:fixed;top:0;right:0;bottom:0;z-index:99;width:min(280px,80vw);background:#F9F7F4;padding:28px 24px;flex-direction:column;box-shadow:-4px 0 24px rgba(26,35,50,0.18);}
+  .nav-mobile-close{align-self:flex-end;background:none;border:none;cursor:pointer;font-size:22px;color:#1A2332;padding:4px;margin-bottom:36px;line-height:1;font-family:'Outfit',sans-serif;}
+  .nav-mobile a{font-family:'Outfit',sans-serif;font-weight:500;font-size:18px;color:#1A2332;text-decoration:none;padding:16px 0;border-bottom:1px solid rgba(26,35,50,0.08);display:block;}
+  .nav-mobile .nm-cta{margin-top:24px;background:#1A2332;color:#F9F7F4 !important;padding:14px 24px;text-align:center;border-radius:2px;font-weight:600;border-bottom:none;}
+  body.nav-open .nav-overlay,body.nav-open .nav-mobile{display:flex;}
+  @media(max-width:768px){.nav-hamburger{display:flex;align-items:center;}}
 </style>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -84,8 +94,16 @@
         <a href="./about.html" class="nav-link" style="color:#3a4456; text-decoration:none;">About</a>
         <a href="./index.html#subscribe" style="background:#1A2332; color:#F9F7F4; text-decoration:none; padding:9px 18px; border-radius:2px; font-weight:600;">Read the Guide</a>
       </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false"><svg width="22" height="16" viewBox="0 0 22 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="2" rx="1"/><rect y="7" width="22" height="2" rx="1"/><rect y="14" width="22" height="2" rx="1"/></svg></button>
     </div>
   </nav>
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="nav-mobile" id="navPanel">
+  <button class="nav-mobile-close" id="navClose" aria-label="Close menu">&#10005;</button>
+  <a href="./articles.html">Articles</a>
+  <a href="./about.html">About</a>
+  <a href="./index.html#pillars" class="nm-cta">Read the Guide</a>
+</div>
 
   <!-- ===== CONTENT ===== -->
   <main style="max-width:720px; margin:0 auto; padding:clamp(48px,7vw,88px) clamp(20px,5vw,48px);">
@@ -225,5 +243,8 @@
     </div>
   </footer>
 
+<script>
+(function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function op(){document.body.classList.add('nav-open');if(t)t.setAttribute('aria-expanded','true');}function cl(){document.body.classList.remove('nav-open');if(t)t.setAttribute('aria-expanded','false');}if(t)t.onclick=op;if(o)o.onclick=cl;if(c)c.onclick=cl;})();
+</script>
 </body>
 </html>
