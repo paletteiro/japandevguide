@@ -311,6 +311,13 @@
     .news-title { font-size: 14px; }
     #news-col-2 { display: none; }
   }
+  /* ===== CATEGORY FILTER ===== */
+  .cat-filter { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px; }
+  .cat-btn { font-family:'Outfit',sans-serif; font-weight:600; font-size:13.5px; padding:9px 20px; border:1px solid rgba(26,35,50,0.15); background:transparent; color:#6b7484; border-radius:2px; cursor:pointer; transition:all 0.18s; }
+  .cat-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .cat-btn.active { background:#1A2332; color:#F9F7F4; border-color:#1A2332; }
+  .cat-btn .cat-count { opacity:0.5; font-weight:500; font-size:12px; margin-left:4px; }
+  .article-card.hidden { display:none; }
   @media (max-width: 768px) {
     .nav-links-desktop { display: none !important; }
   }
@@ -375,11 +382,20 @@
     </div>
 
     <h1 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(32px,5vw,48px); line-height:1.1; letter-spacing:-0.025em; margin:0 0 16px;">All Articles</h1>
-    <p style="font-size:clamp(16px,1.8vw,19px); line-height:1.62; color:#454f60; margin:0 0 48px; max-width:36em;">In-depth guides covering every aspect of building an IT career in Japan.</p>
+    <p style="font-size:clamp(16px,1.8vw,19px); line-height:1.62; color:#454f60; margin:0 0 40px; max-width:36em;">In-depth guides covering every aspect of building an IT career in Japan.</p>
+
+    <div class="cat-filter" role="group" aria-label="Filter by category">
+      <button class="cat-btn active" data-cat="all">All <span class="cat-count">(17)</span></button>
+      <button class="cat-btn" data-cat="visa">Visa &amp; Immigration <span class="cat-count">(2)</span></button>
+      <button class="cat-btn" data-cat="jobs">Jobs &amp; Career <span class="cat-count">(6)</span></button>
+      <button class="cat-btn" data-cat="finance">Salary &amp; Finance <span class="cat-count">(3)</span></button>
+      <button class="cat-btn" data-cat="living">Living in Japan <span class="cat-count">(4)</span></button>
+      <button class="cat-btn" data-cat="tech">Tech &amp; Language <span class="cat-count">(2)</span></button>
+    </div>
 
     <div class="articles-grid">
 
-      <a href="./articles/it-work-visa-japan.html" class="article-card">
+      <a href="./articles/it-work-visa-japan.html" class="article-card" data-cat="visa">
         <img class="article-card-img" src="./images/ebook_images/Indonesian_passport_and_Japanese_work_202606160830.webp" alt="Visa documents" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Visa</span>
@@ -393,7 +409,7 @@
         </div>
       </a>
 
-      <a href="./articles/it-salary-japan.html" class="article-card">
+      <a href="./articles/it-salary-japan.html" class="article-card" data-cat="finance">
         <img class="article-card-img" src="./images/ebook_images/Japanese_yen_banknotes_and_coins_202606160829.webp" alt="Japanese yen salary" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Salary</span>
@@ -407,7 +423,7 @@
         </div>
       </a>
 
-      <a href="./articles/how-to-get-it-job-japan.html" class="article-card">
+      <a href="./articles/how-to-get-it-job-japan.html" class="article-card" data-cat="jobs">
         <img class="article-card-img" src="./images/ebook_images/Person_browsing_Wantedly_job_platform_202606160830.webp" alt="Job hunting platform" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Hiring</span>
@@ -421,7 +437,7 @@
         </div>
       </a>
 
-      <a href="./articles/it-work-culture-japan.html" class="article-card">
+      <a href="./articles/it-work-culture-japan.html" class="article-card" data-cat="living">
         <img class="article-card-img" src="./images/ebook_images/Japanese_office_morning_meeting_scene_202606220633.webp" alt="Japanese office meeting" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Culture</span>
@@ -435,7 +451,7 @@
         </div>
       </a>
 
-      <a href="./articles/cost-of-living-japan.html" class="article-card">
+      <a href="./articles/cost-of-living-japan.html" class="article-card" data-cat="living">
         <img class="article-card-img" src="./images/ebook_images/Cozy_Japanese_apartment_interior_in_202606160830.webp" alt="Japanese apartment" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Living</span>
@@ -449,7 +465,7 @@
         </div>
       </a>
 
-      <a href="./articles/tech-stack-japan.html" class="article-card">
+      <a href="./articles/tech-stack-japan.html" class="article-card" data-cat="tech">
         <img class="article-card-img" src="./images/ebook_images/Cinematic_close-up_of_a_code_202606250840.webp" alt="Code on screen" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Tech</span>
@@ -463,7 +479,7 @@
         </div>
       </a>
 
-      <a href="./articles/japanese-for-engineers.html" class="article-card">
+      <a href="./articles/japanese-for-engineers.html" class="article-card" data-cat="tech">
         <img class="article-card-img" src="./images/ebook_images/Young_Southeast_Asian_woman_studying_202606220633.webp" alt="Studying Japanese" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Language</span>
@@ -477,7 +493,7 @@
         </div>
       </a>
 
-      <a href="./articles/it-career-japan.html" class="article-card">
+      <a href="./articles/it-career-japan.html" class="article-card" data-cat="jobs">
         <img class="article-card-img" src="./images/ebook_images/Cinematic_shot_of_a_winding_202606250840.webp" alt="Career path" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Career</span>
@@ -491,7 +507,7 @@
         </div>
       </a>
 
-      <a href="./articles/it-job-interview-japan.html" class="article-card">
+      <a href="./articles/it-job-interview-japan.html" class="article-card" data-cat="jobs">
         <img class="article-card-img" src="./images/ebook_images/Professional_video_call_job_interview_202606161301.webp" alt="Job interview" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Interview</span>
@@ -505,7 +521,7 @@
         </div>
       </a>
 
-      <a href="./articles/top-it-companies-japan.html" class="article-card">
+      <a href="./articles/top-it-companies-japan.html" class="article-card" data-cat="jobs">
         <img class="article-card-img" src="./images/ebook_images/Cinematic_wide_shot_of_a_202606250838.webp" alt="Tokyo tech district" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Companies</span>
@@ -519,7 +535,7 @@
         </div>
       </a>
 
-      <a href="./articles/why-live-in-japan-developer.html" class="article-card">
+      <a href="./articles/why-live-in-japan-developer.html" class="article-card" data-cat="living">
         <img class="article-card-img" src="./images/ebook_images/Serene_view_from_a_Japanese_202606220633.webp" alt="Serene view from Japan" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Living</span>
@@ -533,7 +549,7 @@
         </div>
       </a>
 
-      <a href="./articles/apartment-hunting-japan.html" class="article-card">
+      <a href="./articles/apartment-hunting-japan.html" class="article-card" data-cat="living">
         <img class="article-card-img" src="./images/ebook_images/Cinematic_shot_of_a_cozy_202606250841.webp" alt="Cozy Japanese apartment interior" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Living</span>
@@ -547,7 +563,7 @@
         </div>
       </a>
 
-      <a href="./articles/japan-permanent-residency-engineer.html" class="article-card">
+      <a href="./articles/japan-permanent-residency-engineer.html" class="article-card" data-cat="visa">
         <img class="article-card-img" src="./images/ebook_images/6-1_pr.webp" alt="Japan permanent residency card for IT engineers" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Visa</span>
@@ -561,7 +577,7 @@
         </div>
       </a>
 
-      <a href="./articles/it-jobs-japan-without-japanese.html" class="article-card">
+      <a href="./articles/it-jobs-japan-without-japanese.html" class="article-card" data-cat="jobs">
         <img class="article-card-img" src="./images/ebook_images/Cinematic_split_composition_—_left_202606250839.webp" alt="Developer working in Japan without Japanese" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Career</span>
@@ -575,7 +591,7 @@
         </div>
       </a>
 
-      <a href="./articles/japan-tax-guide-engineers.html" class="article-card">
+      <a href="./articles/japan-tax-guide-engineers.html" class="article-card" data-cat="finance">
         <img class="article-card-img" src="./images/ebook_images/5-2_pajak.webp" alt="Japan income tax documents for foreign engineers" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Finance</span>
@@ -589,7 +605,7 @@
         </div>
       </a>
 
-      <a href="./articles/gaijin-tax-japan-engineer.html" class="article-card">
+      <a href="./articles/gaijin-tax-japan-engineer.html" class="article-card" data-cat="finance">
         <img class="article-card-img" src="./images/ebook_images/Japanese_yen_banknotes_and_coins_202606160829.webp" alt="Japanese yen — gaijin tax hidden costs for foreign engineers" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Finance</span>
@@ -603,7 +619,7 @@
         </div>
       </a>
 
-      <a href="./articles/best-cities-japan-it-jobs.html" class="article-card">
+      <a href="./articles/best-cities-japan-it-jobs.html" class="article-card" data-cat="jobs">
         <img class="article-card-img" src="./images/ebook_images/Aerial_cinematic_view_of_Osaka_202606220632.webp" alt="Aerial view of Osaka city — best cities Japan IT jobs" loading="lazy">
         <div class="article-card-body">
           <span class="article-card-badge">Career</span>
@@ -856,6 +872,28 @@
     </div>
   </footer>
 
+<script>
+(function(){
+  var btns = document.querySelectorAll('.cat-btn');
+  var cards = document.querySelectorAll('.article-card');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var cat = this.dataset.cat;
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+      var visible = 0;
+      cards.forEach(function(card){
+        if(cat === 'all' || card.dataset.cat === cat){
+          card.classList.remove('hidden');
+          visible++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+})();
+</script>
 <script>
 (function(){var t=document.getElementById('navToggle'),o=document.getElementById('navOverlay'),c=document.getElementById('navClose');function op(){document.body.classList.add('nav-open');if(t)t.setAttribute('aria-expanded','true');}function cl(){document.body.classList.remove('nav-open');if(t)t.setAttribute('aria-expanded','false');}if(t)t.onclick=op;if(o)o.onclick=cl;if(c)c.onclick=cl;})();
 </script>
