@@ -127,6 +127,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://japandevguide.com/articles/job-switching-japan-engineer.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://japandevguide.com/privacy.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
