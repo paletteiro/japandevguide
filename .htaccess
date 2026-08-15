@@ -34,6 +34,7 @@ RewriteRule ^index\.html$ / [R=301,L]
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
   Header always set X-Content-Type-Options "nosniff"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
 # Fallback: set cache via FileETag + mod_rewrite for hosts without mod_headers
 FileETag None
