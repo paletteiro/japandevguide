@@ -20,5 +20,18 @@ jobs:
       - name: Sync to S3
         run: aws s3 sync . s3://japandevguide --delete --exclude ".git/*" --exclude ".github/*" --exclude "ebook/*" --exclude "design/*"
 
+      - name: Update CloudFront Function
+        run: |
+          ETAG=$(aws cloudfront describe-function --name redirect-index-html --query 'ETag' --output text)
+          aws cloudfront update-function \
+            --name redirect-index-html \
+            --function-config Comment="Redirect handler",Runtime=cloudfront-js-2.0 \
+            --function-code fileb://cloudfront-function.js \
+            --if-match $ETAG
+          NEW_ETAG=$(aws cloudfront describe-function --name redirect-index-html --query 'ETag' --output text)
+          aws cloudfront publish-function \
+            --name redirect-index-html \
+            --if-match $NEW_ETAG
+
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id EA5NU0XCCECS2 --paths "/*"
